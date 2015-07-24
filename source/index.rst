@@ -19,6 +19,7 @@ Contents:
    
    gateway_design
    api_usage
+   gateway_engine
 
 
 
