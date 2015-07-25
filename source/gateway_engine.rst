@@ -30,7 +30,7 @@ If using the Exo-Python module, Gateway Engine can automatically watch your
 bandwidth for you and help make sure that you don't have any unexpected costly
 cellular bills.
 
-.. warning:: This feature is still in early beta and is still being tested
+.. warning:: This feature is still in early beta and is still being tested.
 
 Application Updates
 ~~~~~~~~~~~~~~~~~~~
