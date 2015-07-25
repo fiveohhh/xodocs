@@ -11,6 +11,14 @@ solution based on the Exosite cloud.  This guide encompasses getting
 data from your physical devices up to the Exosite OnePlatform.  For an introduction
 on the front end portion of your solution, please see....
 
+Gateway
+    A device that has a connection to the Internet.  This connection can be WiFi,
+    Ethernet, cellular, or any other link that allows it to talk to Exosite.  The
+    gateway will also have a way to communicate with local nodes
+Node
+    A device that has data it needs to send to Exosite, but it doesn't 
+    have its own connection to Exosite.  It therefore relays that data through
+    a gateway.
 
 Contents:
 
