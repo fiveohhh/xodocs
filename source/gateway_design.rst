@@ -55,7 +55,7 @@ Advantages
 * The user is able to always see the most recent data in their cloud UI
 * Notifications are able to be sent immediately when a threshold is crossed.
 * Since Exosite is able to timestamp  the record as soon as it receives it, the 
-    gateway does not necessarily need access to a time source.
+  gateway does not necessarily need access to a time source.
 
 Disadvantages
 """""""""""""
