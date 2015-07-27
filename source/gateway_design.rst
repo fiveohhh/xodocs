@@ -18,8 +18,8 @@ Gateway/Node System Architectures
 ---------------------------------
 There are typically two different ways that the gateway/node system send data 
 up to Exosite:
-#. Batch sending
-#. Real-time sending
+# Batch sending
+# Real-time sending
 
 Batch sending
 ~~~~~~~~~~~~~
