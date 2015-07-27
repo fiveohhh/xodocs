@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Exosite Solutions Guide'
+project = u'Gateway Solutions Guide'
 copyright = u'2015, Andy Lee'
 author = u'Andy Lee'
 
