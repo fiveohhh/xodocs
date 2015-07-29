@@ -61,12 +61,13 @@ scripts and datasources attached to it.  Datasources are used to store data and
 scripts are used to process data.  A device on One Platform is meant to have a 
 one-to-one relationship with a physical device.  For example, you may have a
 physical device that can read the temperature in celsius.  To represent this device on
-One Platform, you would create a device on One Platform that has a datasource
-called `temperature_celsius`.  ``We're going to use this temperature device as our
-example device throughout the rest of this document.``
+One Platform, you would create a device, we'll call it `thermometer`, on One 
+Platform that has a datasource called `temperature_celsius`.  ``We're going to
+use this temperature device as our example device throughout the rest of this
+document.``
 
 
-How Do I read/write Data From One Platform
+How Do I Read/Write Data From One Platform
 ------------------------------------------
 Before you can read data from One Platform, you must first retrieve your devices
 CIK.  This is typically obtained via :doc:`provisioning`.  Once you have the cik
@@ -84,8 +85,8 @@ datasource that the device would write its temperature reading into.
 
 Let's say your device is currently reading a value of `23` (Celsius).  Using the
 data api, you can tell One Platform to write the value of `23` to the `temperature_celsius`
-datasource with the following http request to m2.exosite.com. (We'll assume your
-cik is `1234567890123456789012345678901234567890`)
+datasource with the following http request to m2.exosite.com. (We'll assume our
+temperature device has a cik of `1234567890123456789012345678901234567890`)
 
 .. code-block:: http
 

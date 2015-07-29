@@ -109,6 +109,27 @@ and the architecture slides more towards the real-time end.
 
 Choosing a connection type
 --------------------------
+Connection types are typically divided into the follow three categories:
+
+1. Cellular
+2. WiFi
+3. Ethernet
+
+Cellular
+~~~~~~~~
+Cellular devices use a cellular network to communicate with One Platform.  The
+networks used for communications are often the same networks that cell phones
+use.
+
+WiFi
+~~~~
+Gateways that use WiFi use the same WiFi networks that your computer connects to.
+
+Ethernet
+~~~~~~~~
+Ethernet connections are hardwired connections that connect directly to a network
+with access to the 
+
 Given the choice, a non-cellular connection type is almost always the preferred 
 method of connection.  However, there is one potential drawback to using the 
 end user's Ethernet connection, and that is their network infrastructure.  Often 
