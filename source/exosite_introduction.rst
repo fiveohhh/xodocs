@@ -126,16 +126,16 @@ following:
 
     while true do
         
-        local ts = temp_c.wait()-- this call blocks until data arrives on temp_c
-        -- the returned value is the timestamp of when the device was written to
-        -- Onle Platform.
+        local ts = temp_c.wait()-- this call blocks until data arrives on temp_c.
+        -- The returned value is the timestamp of when the device was written to
+        -- One Platform.
         
         -- let's retrieve the value that we wait() told us about.
         local celsius_temp = temp_c[ts]
         
         -- Convert that value to Fahrenheit and write it to the `temperature_fahrenheit`
         -- datasource.
-        tempf.value = celsius_temp * (9/5) + 32
+        temp_f.value = celsius_temp * (9/5) + 32
     
 
     
