@@ -94,9 +94,9 @@ temperature device has a cik of `1234567890123456789012345678901234567890`)
     Host: m2.exosite.com 
     X-Exosite-CIK: 1234567890123456789012345678901234567890
     Content-Type: application/x-www-form-urlencoded; charset=utf-8 
-    Content-Length: 17
+    Content-Length: 22
     
-    temperature_c=23
+    temperature_celsius=23
 
 After this request, the `temperature_celsius` datasource on your device would
 have a value of `23` that was indexed by the timestamp that One Platform
