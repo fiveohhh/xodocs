@@ -18,8 +18,8 @@ Gateway/Node System Architectures
 ---------------------------------
 There are typically two different ways that the gateway/node system send data 
 up to Exosite:
-# Batch sending
-# Real-time sending
+1. Batch sending
+2. Real-time sending
 
 Batch sending
 ~~~~~~~~~~~~~
@@ -98,12 +98,6 @@ to keep data points stored locally on the gateway until the connection is restor
 and the points can be sent to Exosite.  This allows you to keep all the benefits 
 of real-time reporting, but you are also able to handle periods of offline time.
 
-Using CoAP
-----------
-Exosite also has a CoAP API.  Using CoAP will drastically reduce the overhead 
-of TCP/IP/HTTP.  The main drawback to CoAP is that customer routers/firewalls 
-may not know how to handle it, further increasing the complexity of navigating 
-the end users intranet.  
 
 Important consideration when choosing an architecture
 -----------------------------------------------------

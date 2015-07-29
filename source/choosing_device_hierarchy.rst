@@ -1,6 +1,6 @@
-##########
-API Usage
-##########
+###########################
+Choosing a Device Hierarchy
+###########################
 This is meant to be a high level primer on using Exosite's APIs.  For the full
 API documentation, please see the official Exosite docs page (http://docs.exosite.com/).
 Before reading this document, you should be familiar with HTTP.  If you're not

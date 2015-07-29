@@ -2,6 +2,8 @@
 Gateway Engine
 ##############
 Gateway Engine is a framework that eases the development of gateway applications.
+This page gives a brief introduction to what te Exosite Gateway Engine is.  For
+more detailed documentation, please see the project's readme file.
 
 Key Features
 ------------
@@ -9,8 +11,8 @@ It provides the following key features:
 
 Application Hosting
 ~~~~~~~~~~~~~~~~~~~
-Gateway Engine's core feature is to provide a framework for you application/s
-to run in.  Allowing you to focus development efforts on just the business
+Gateway Engine's core feature is to provide a framework for your application/s
+to run in.  This allows you to focus development efforts on just the business
 logic of your application.
 
 Process Monitoring
