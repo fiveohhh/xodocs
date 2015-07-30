@@ -13,17 +13,20 @@ on the front end portion of your solution, please see....
 
 If you are new to Exosite, please see our :doc:`exosite_introduction` document.
 It will get you familiar with terms and concepts used in describing/designing
-your solution.
+your solution.  Once you are familiar with Exosite please checkout the rest
+of our guides
 
 
 
-Contents:
+Guides:
 
 .. toctree::
    :maxdepth: 1
    
-   exosite_introduction
+   provisioning
    gateway_design
+   api_usage
+   gateway_engine
    
 
 
