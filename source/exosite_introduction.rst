@@ -61,8 +61,8 @@ scripts and datasources attached to it.  Datasources are used to store data and
 scripts are used to process data.  A device on One Platform is meant to have a 
 one-to-one relationship with a physical device.  For example, you may have a
 physical device that can read the temperature in celsius.  To represent this
-device on One Platform, you would create a device and name it `thermometer`.
-You would give add a datasource called `temperature_celsius` to the `thermometer`
+device on One Platform, you would create a device and name it ``thermometer``.
+You would give add a datasource called ``temperature_celsius`` to the ``thermometer``
 device.  *We're going to use the `thermometer` device as our example device
 throughout the rest of this document.*
 
@@ -83,8 +83,8 @@ Datasources are a named "port" that stores timeseries data for your device.  In
 our temperature reading device example, the `temperature_celsius` would be the
 datasource that the device would write its temperature reading into.
 
-Let's say your device is currently reading a value of `23` (Celsius).  Using the
-data api, you can tell One Platform to write the value of `23` to the `temperature_celsius`
+Let's say your device is currently reading a value of ``23`` (Celsius).  Using the
+data api, you can tell One Platform to write the value of ``23`` to the ``temperature_celsius``
 datasource with the following http request to m2.exosite.com. (We'll assume our
 temperature device has a cik of `1234567890123456789012345678901234567890`)
 
@@ -98,8 +98,8 @@ temperature device has a cik of `1234567890123456789012345678901234567890`)
     
     temperature_celsius=23
 
-After this request, the `temperature_celsius` datasource on your device would
-have a value of `23` that was indexed by the timestamp that One Platform
+After this request, the ``temperature_celsius`` datasource on your device would
+have a value of ``23`` that was indexed by the timestamp that One Platform
 received it.
 
 .. warning::
@@ -114,8 +114,8 @@ your device and then do some processing on that data and do something with the
 results of the processing (e.g. Send email/sms or update another datasource.
 
 Let's say that we wanted to convert our temperature reading from Celsius to Fahrenheit.
-To do this we would add a `temperature_fahrenheit` datasource to our device, and
-a script called `celsius_to_fahrenheit.lua`  The script would look like the
+To do this we would add a ``temperature_fahrenheit`` datasource to our device, and
+a script called ``celsius_to_fahrenheit.lua``  The script would look like the
 following:
 
 .. code-block:: lua
