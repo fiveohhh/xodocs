@@ -66,6 +66,24 @@ You would give add a datasource called ``temperature_celsius`` to the ``thermome
 device.  *We're going to use the `thermometer` device as our example device
 throughout the rest of this document.*
 
+What Is The Difference Between An RID And a CIK?
+------------------------------------------------
+CIKs and RID are both 40 character hexadecimal strings.  They both have a
+one-to-one mapping with a device.  The RID is used to identify a single device
+on One Platform.  As soon as a device is created, it is assigned an RID.  For 
+the life of the device, the RID never changes its only job is to give the device
+a globally unique identifier.  The CIK is a key that is used to access a device.
+The CIK for a device can be regenerated if the existing one is compromised or 
+the original one is lost.
+
+The relationship between a CIK and an RID is akin to the relationship between
+the address of a house and the keys to that house.  Once a house is built, it's
+given an address that is unique across the world.  Its address will never
+change (much like an rid).  However, the locks to the house can be re-keyed, at
+any time.  Re-keying a house is analogous to refreshing the cik of a device.  The
+RID stays the same, but the old cik no longer allows access to it and the newly
+generated cik now has access.
+
 
 How Do I Read/Write Data From One Platform
 ------------------------------------------

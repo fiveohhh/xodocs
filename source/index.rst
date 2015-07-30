@@ -3,33 +3,19 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Exosite Solutions Guide's documentation!
-===================================================
+Guide To Designing An IoT Solution
+==================================
 
 This guide is intended to give the user an introduction to building an IoT
 solution based on the Exosite cloud.  This guide encompasses getting
 data from your physical devices up to the Exosite OnePlatform.  For an introduction
 on the front end portion of your solution, please see....
 
-If you are new to Exosite, please see our :doc:`exosite_introduction`.  It will get you
-familiar with terms and concepts used in describing/designing your solution.
+If you are new to Exosite, please see our :doc:`exosite_introduction` document.
+It will get you familiar with terms and concepts used in describing/designing
+your solution.
 
 
-
-Glossary
-========
-
-.. Glossary::
-
-    Gateway
-        A device that has a connection to the Internet.  This connection can be WiFi,
-        Ethernet, cellular, or any other link that allows it to talk to Exosite.  The
-        gateway will also have a way to communicate with local nodes
-
-    Node
-        A device that has data it needs to send to Exosite, but it doesn't 
-        have its own connection to Exosite.  It therefore relays that data through
-        a gateway.
 
 Contents:
 
@@ -38,8 +24,7 @@ Contents:
    
    exosite_introduction
    gateway_design
-   api_usage
-   gateway_engine
+   
 
 
 

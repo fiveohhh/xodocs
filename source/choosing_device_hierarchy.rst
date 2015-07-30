@@ -43,6 +43,8 @@ or they are already in working systems and you do not want to alter their
 firmware/software.  If this is the case you will want to go with option #2.  This
 adds more complexity and additional state to the gateway.
 
-Alternatively this complexity and state can be moved to the sensor nodes allow
+Alternatively this complexity and state can be moved to the sensor nodes.  The
+main advantages to storing the cik on the nodes is the ability to decouple the
+node devices from the gateway devices.
 
 Other advantages?

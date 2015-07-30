@@ -14,6 +14,19 @@ Ethernet, or WiFi network.
 
 .. image:: _static/gateway_diagram.png
 
+.. Glossary::
+
+    Gateway
+        A device that has a connection to the Internet.  This connection can be WiFi,
+        Ethernet, cellular, or any other link that allows it to talk to Exosite.  The
+        gateway will also have a way to communicate with local nodes
+
+    Node
+        A device that has data it needs to send to Exosite, but it doesn't 
+        have its own connection to Exosite.  It therefore relays that data through
+        a gateway.
+
+
 Gateway/Node System Architectures
 ---------------------------------
 There are typically two different ways that the gateway/node system send data 
@@ -149,4 +162,13 @@ General best practices
   different timezones much easier
 * Use separate threads for asynchronous communications to the local network and Exosite
 
-
+Additional Topics
+-----------------
+.. toctree::
+   :maxdepth: 1
+   
+   choosing_device_hierarchy
+   provisioning
+   api_usage
+   gateway_engine
+   
