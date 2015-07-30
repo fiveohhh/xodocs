@@ -31,6 +31,7 @@ Gateway/Node System Architectures
 ---------------------------------
 There are typically two different ways that the gateway/node system send data 
 up to Exosite:
+
 1. Batch sending
 2. Real-time sending
 
