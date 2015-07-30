@@ -7,7 +7,7 @@ Before reading this document, you should be familiar with HTTP.  If you're not
 familiar, `this page <http://www.jmarshall.com/easy/http/>`_ gives a good introduction.
 
 This page does not cover the device provisioning process for details on the
-API's required to provision your device, please see the `provisioning guide <>`_.
+API's required to provision your device, please see the :doc:`provisioning` doc.
 
 RPC, Data, or CoAP?
 ------------------------------

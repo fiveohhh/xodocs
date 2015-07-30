@@ -60,11 +60,11 @@ One Platform represents each device as a node on the tree.  A device can have
 scripts and datasources attached to it.  Datasources are used to store data and
 scripts are used to process data.  A device on One Platform is meant to have a 
 one-to-one relationship with a physical device.  For example, you may have a
-physical device that can read the temperature in celsius.  To represent this device on
-One Platform, you would create a device, we'll call it `thermometer`, on One 
-Platform that has a datasource called `temperature_celsius`.  *We're going to
-use this temperature device as our example device throughout the rest of this
-document.*
+physical device that can read the temperature in celsius.  To represent this
+device on One Platform, you would create a device and name it `thermometer`.
+You would give this device a datasource called `temperature_celsius`.  *We're 
+going to use the `thermometer` device as our example device throughout the rest
+of this document.*
 
 
 How Do I Read/Write Data From One Platform

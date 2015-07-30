@@ -6,7 +6,7 @@
 Welcome to Exosite Solutions Guide's documentation!
 ===================================================
 
-This guide is intended to give the user a quick introduction to building an IoT
+This guide is intended to give the user an introduction to building an IoT
 solution based on the Exosite cloud.  This guide encompasses getting
 data from your physical devices up to the Exosite OnePlatform.  For an introduction
 on the front end portion of your solution, please see....
@@ -21,7 +21,7 @@ Glossary
 
 .. Glossary::
 
-Gateway
+    Gateway
         A device that has a connection to the Internet.  This connection can be WiFi,
         Ethernet, cellular, or any other link that allows it to talk to Exosite.  The
         gateway will also have a way to communicate with local nodes

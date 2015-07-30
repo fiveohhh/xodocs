@@ -1,85 +1,48 @@
 ###########################
 Choosing a Device Hierarchy
 ###########################
-This is meant to be a high level primer on using Exosite's APIs.  For the full
-API documentation, please see the official Exosite docs page (http://docs.exosite.com/).
-Before reading this document, you should be familiar with HTTP.  If you're not
-familiar, `this page <http://www.jmarshall.com/easy/http/>`_ gives a good introduction.
+When designing a solution that utilizes one, or many, gateways with nodes attached
+to that gateway, a decision needs to be made about how to handle the CIKs for
+each device.  This page will give an introduction to the topic of choosing
+how to store these ciks
 
-This page does not cover the device provisioning process for details on the
-API's required to provision your device, please see the `provisioning guide <>`_.
 
-RPC, Data, or CoAP?
-------------------------------
-Exosite API calls can be made using 
-the `Exosite JSON RPC interface <http://docs.exosite.com/rpc/>`_, 
-the `Exosite Data Interface <http://docs.exosite.com/http/>`_, or 
-the `Exosite CoAP Interface <http://docs.exosite.com/http/>`_.  Which API
-you choose depends on the architeture of your gateway.
 
-Data Interface
-~~~~~~~~~~~~~~
-The Data API is a simple API built on top of HTTP. It uses HTTP and provides
-the following basic functions.
+Common Hierarchies
+------------------
+How to structure the hierarcy of the devices in your system typically falls
+into one of three different ways.
 
-* `Write <http://docs.exosite.com/http/#write>`_
-* `Read <http://docs.exosite.com/http/#read>`_
-* `Read/Write <http://docs.exosite.com/http/#hybrid-readwrite>`_
-* `Long-Polling <http://docs.exosite.com/http/#long-polling>`_
+1. Each node and gateway stores and uses its own cik
+2. Each node and gateway has its own cik, but the gateway stores the cik for each node
+3. Only the gateway has a cik and it uses 
 
-Write
-"""""
-If you want to write the value ``24`` to your devices ``temperature`` 
-datasource, the body of your ``POST`` request is simply ``temperature=24``.  
+Which Hierarchy To Choose?
+--------------------------
+Choosing one of the three methods is a decision that should be made after you
+know what type of hardware you will be using, and what type of information you
+want to send to One Platform.
 
-Read
-""""
-If you want to read from a datasource, you make a ``GET`` request to 
-``GET /onep:v1/stack/alias?<alias 1>`` where ``<alias 1>`` is the name of your
-devices datasource you want to read from. For example, if you want to read from
-your device's ``temperature`` datasource, you would make a ``GET`` request to
-``GET /onep:v1/stack/alias?temperature``, and the body of the response would
-look like this: ``temperature=24``.  
+Options #1 and #2 both use the same concept of one cik per device, whereas
+option #3 uses one CIK per node/gateway group.  The most flexible solution
+is a one-to-one relationship between physical devices (nodes/gateway) and
+the devices on your platform.  This allow you to add/remove devices as nodes
+are updated/replaced, without having to change your data model.  
 
-.. note:: Your read responses will have the body 
- `url encoded <http://www.w3schools.com/tags/ref_urlencode.asp>`_
- 
-.. note:: If your requests has multiple aliases, they will be seperated by a
- ``\r\n`` in the body.
+There are, however, times when you will only want one cik per gateway and all 
+of it's nodes.  This may happen when the configuration of nodes/gateways is 
+always the same.  For example, your system measures tire pressures on a
+motorcycle.  In this instance you know that you will always have a front tire
+pressure and a rear tire pressure sensor, and one gateway.  In this case, even
+if you swap out sensors, you still have one front pressure sensor and one rear
+pressure sensor.
 
-If you want to read from multiple datasources at the same time, you would add
-multiple datasources as URL parameters and seperate them with an ``&`` 
-(e.g. ``/onep:v1/stack/alias?temperature&humidity``).  The response would contain
-your read values seperated by an ``&`` (e.g. temperature=25&humidity=77).
- 
-Read/Write
-""""""""""
-The read/write command allows you to perform a read and a write request at the
-same time.  To do this, you combine both of the above methods and make a ``POST``
-request to ``/onep:v1/stack/alias?<alias 1>`` while also including your write
-values in the body of your request.  The response of your request will contain
-the values of your read requests.
+The only difference between options #1 and #2 is the where the CIK is stored.
+Often times your sensor node devices may not be able to store their cik on board
+or they are already in working systems and you do not want to alter their
+firmware/software.  If this is the case you will want to go with option #2.  This
+adds more complexity and additional state to the gateway.
 
-JSON RPC
-~~~~~~~~
-The JSON RPC uses commands encoded in as `JSON <http://www.w3schools.com/json/>`_.
-Using the JSON RPC, you can send multiple commands at once.  It provides the most
-features of any of Exosite's APIs.
+Alternatively this complexity and state can be moved to the sensor nodes allow
 
-The main disadvantage to using the JSON RPC is that it requires the most bandwidth
-and it also requires the application to parse/build json.  Most higher level
-languages have support for this.  If you are developing in C, Exosite has
-successfully used the Jsmn library for parsing JSON.  For more details on using
-Jsmn in your project, please see the `Jsmn development guide <>`_.
-
-Here is a full list of the JSON RPC commands.  We will cover a small subset of
-the commands that allow your device to read/write data to Exosite.
-
-CoAP
-~~~~
-The CoAP API is intended to be used for low bandwidth devices.
-
-DTLS
-""""
-The CoAP API also has the ability to use a form of DTLS to keep the link between
-Exosite and your device private.
+Other advantages?
