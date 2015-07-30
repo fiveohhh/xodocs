@@ -130,7 +130,7 @@ following:
         -- The returned value is the timestamp of when the device was written to
         -- One Platform.
         
-        -- let's retrieve the value that we wait() told us about.
+        -- let's retrieve the value that the wait() told us about.
         local celsius_temp = temp_c[ts]
         
         -- Convert that value to Fahrenheit and write it to the `temperature_fahrenheit`
