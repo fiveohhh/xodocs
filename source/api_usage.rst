@@ -9,15 +9,15 @@ familiar, `this page <http://www.jmarshall.com/easy/http/>`_ gives a good introd
 This page does not cover the device provisioning process for details on the
 API's required to provision your device, please see the :doc:`provisioning` doc.
 
-RPC, Data, or CoAP?
+Data, RPC, or CoAP?
 ------------------------------
 Exosite API calls can be made using 
-the `Exosite JSON RPC interface <http://docs.exosite.com/rpc/>`_, 
-the `Exosite Data Interface <http://docs.exosite.com/http/>`_, or 
+the `Exosite Data Interface <http://docs.exosite.com/http/>`_,
+the `Exosite JSON RPC interface <http://docs.exosite.com/rpc/>`_, or 
 the `Exosite CoAP Interface <http://docs.exosite.com/http/>`_.  Which API
 you choose depends on the architeture of your gateway.
 
-Data Interface
+Data API
 ~~~~~~~~~~~~~~
 The Data API is a simple API built on top of HTTP. It uses HTTP and provides
 the following basic functions.
