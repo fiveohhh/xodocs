@@ -49,7 +49,7 @@ Advantages
 
 Disadvantages
 """""""""""""
-* The main disadvantage to the batch sending method is the loss of real-time\
+* The main disadvantage to the batch sending method is the loss of real-time
   data viewing.  By storing the data on the local gateway, the end user is unable
   to see that data until the gateway sends the data up to Exosite.
 * The end user is unable to receive real-time alert notifications (e.g. over temperature condition).
