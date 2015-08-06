@@ -26,7 +26,7 @@ Glossary
         One Platform.  The RID never changes during the life of the node.
     
     Portals
-        A grpahical frontend for managing users and resources on the Exosite
+        A graphical frontend for managing users and resources on the Exosite
         One Platform.
     
     Scripts
@@ -34,7 +34,12 @@ Glossary
     
     Datasources
         A named resource underneath a device that the device can write data to
-        (e.g. temperature, humidity...)
+        (e.g. temperature, humidity...).  This data is indexed by the timestamp
+        of when it occurred.
+    
+    White Label Account
+        An Exosite account that has a url that is personalized to your 
+        domain (e.g mycompany.exosite.com)
    
 What is One Platform?
 --------------------- 
@@ -79,21 +84,21 @@ the original one is lost.
 The relationship between a CIK and an RID is akin to the relationship between
 the address of a house and the keys to that house.  Once a house is built, it's
 given an address that is unique across the world.  Its address will never
-change (much like an rid).  However, the locks to the house can be re-keyed, at
-any time.  Re-keying a house is analogous to refreshing the cik of a device.  The
-RID stays the same, but the old cik no longer allows access to it and the newly
-generated cik now has access.
+change (much like an RID).  However, the locks to the house can be re-keyed, at
+any time.  Re-keying a house is analogous to refreshing the CIK of a device.  The
+RID stays the same, but the old CIK no longer allows access to it and the newly
+generated CIK now has access.
 
 
 How Do I Read/Write Data From One Platform
 ------------------------------------------
 Before you can read data from One Platform, you must first retrieve your devices
-CIK.  This is typically obtained via :doc:`provisioning`.  Once you have the cik
-for your device you use that cik to authenticate with One Platform using your
+CIK.  This is typically obtained via :doc:`provisioning`.  Once you have the CIK
+for your device you use that CIK to authenticate with One Platform using your
 API of choice(:doc:`api_usage`)
 
 .. note::
-    Obtaining a portal/domain/user cik is possible, but not covered in this document.
+    Obtaining a portal/domain/user CIK is possible, but not covered in this document.
 
 Datasources
 """""""""""
@@ -104,7 +109,7 @@ datasource that the device would write its temperature reading into.
 Let's say your device is currently reading a value of ``23`` (Celsius).  Using the
 data api, you can tell One Platform to write the value of ``23`` to the ``temperature_celsius``
 datasource with the following http request to m2.exosite.com. (We'll assume our
-temperature device has a cik of `1234567890123456789012345678901234567890`)
+temperature device has a CIK of `1234567890123456789012345678901234567890`)
 
 .. code-block:: http
 
