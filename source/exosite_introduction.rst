@@ -12,9 +12,14 @@ Glossary
     
     Device
         Represented by a node in the One Platform tree.
+
+    Node
+        A node is a leaf element on the One Platform tree.  See :ref:`my-reference-label`
+        for more information.
     
     Datasource
-        A device can have zero, or many , datasources attached to it.  
+        A datasource is a node on the One Platform tree.  They are used to store
+        time-series data.  A device can have zero, or many, datasources underneath it.  
     
     CIK
         A 40 character hexadecimal string that is used to authenticate as a 
@@ -31,16 +36,12 @@ Glossary
     
     Scripts
         A lua script that processes data on the Exosite One Platform
-    
-    Datasources
-        A named resource underneath a device that the device can write data to
-        (e.g. temperature, humidity...).  This data is indexed by the timestamp
-        of when it occurred.
-    
+       
     White Label Account
         An Exosite account that has a url that is personalized to your 
         domain (e.g mycompany.exosite.com)
-   
+
+.. _what-is-one-platform:		
 What is One Platform?
 --------------------- 
 One Platform is the backend Exosite product that stores and processes all of
