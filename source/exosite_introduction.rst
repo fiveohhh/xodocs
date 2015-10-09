@@ -24,7 +24,7 @@ Glossary
     CIK
         A 40 character hexadecimal string that is used to authenticate as a 
         node in the One Platform.  With the CIK, you can read/write data to a
-        node, or any of its children
+        node, or any of its children.
     
     RID
         A 40 character hexadecimal string that uniquely represents a node in the
@@ -35,13 +35,16 @@ Glossary
         One Platform.
     
     Scripts
-        A lua script that processes data on the Exosite One Platform
+        A lua script that processes data on the Exosite One Platform.
        
     White Label Account
         An Exosite account that has a url that is personalized to your 
-        domain (e.g mycompany.exosite.com)
+        domain (e.g mycompany.exosite.com).  Full custom domain names can also
+        be created (e.g. mycompany.com)	.
 
-.. _what-is-one-platform:		
+
+.. _what-is-one-platform:	
+	
 What is One Platform?
 --------------------- 
 One Platform is the backend Exosite product that stores and processes all of
