@@ -14,7 +14,7 @@ Glossary
         Represented by a node in the One Platform tree.
 
     Node
-        A node is a leaf element on the One Platform tree.  See :ref:`my-reference-label`
+        A node is a leaf element on the One Platform tree.  See :ref:`what-is-one-platform`
         for more information.
     
     Datasource
