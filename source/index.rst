@@ -8,8 +8,11 @@ Guide To Designing An IoT Solution
 
 This guide is intended to give the user an introduction to building an IoT
 solution based on the Exosite cloud.  This guide encompasses getting
-data from your physical devices up to the Exosite OnePlatform.  For an introduction
-on the front end portion of your solution, please see....
+data from your physical devices up to the Exosite OnePlatform.  
+
+Exosite also has an optional frontend component available.  The frontend product
+is called Portals.  Further information about Portals can be read at a yet to be
+determined place.
 
 If you are new to Exosite, please see our :doc:`exosite_introduction` document.
 It will get you familiar with terms and concepts used in describing/designing
